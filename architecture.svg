@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5b6b73"/>
+    </marker>
+    <style>
+      .box{fill:#ffffff;stroke:#c9d3d8;stroke-width:1.2}
+      .zone{fill:#f4f7f8}
+      .acc{fill:#eaf3f1;stroke:#2f6f62;stroke-width:1.4}
+      .t{font-size:13.5px;font-weight:600;fill:#1d2a30}
+      .s{font-size:11.5px;fill:#46565e}
+      .z{font-size:10.5px;font-weight:600;fill:#2f6f62;letter-spacing:1.2px}
+      .l{stroke:#5b6b73;stroke-width:1.3;fill:none}
+      .d{stroke:#5b6b73;stroke-width:1.3;fill:none;stroke-dasharray:4 3}
+      .lab{font-size:10.5px;fill:#5b6b73}
+    </style>
+  </defs>
+
+  <rect class="zone" x="10" y="10" width="205" height="540" rx="10"/>
+  <rect class="zone" x="230" y="10" width="522" height="540" rx="10"/>
+  <rect class="zone" x="767" y="10" width="223" height="540" rx="10"/>
+  <text class="z" x="24" y="34">USERS</text>
+  <text class="z" x="244" y="34">ON-PREMISE SERVER</text>
+  <text class="z" x="781" y="34">DATA AND INTEGRATIONS</text>
+
+  <!-- Nutzung -->
+  <rect class="box" x="24" y="54" width="177" height="84" rx="8"/>
+  <text class="t" x="36" y="77">Practice team</text>
+  <text class="s" x="36" y="96">therapists, front desk,</text>
+  <text class="s" x="36" y="112">management; Mac, Windows,</text>
+  <text class="s" x="36" y="128">iPad, iPhone (web app)</text>
+
+  <rect class="acc" x="24" y="158" width="177" height="70" rx="8"/>
+  <text class="t" x="36" y="181">Tailscale VPN</text>
+  <text class="s" x="36" y="200">only way into the app,</text>
+  <text class="s" x="36" y="216">no open ports</text>
+
+  <rect class="box" x="24" y="258" width="177" height="66" rx="8"/>
+  <text class="t" x="36" y="281">Patients</text>
+  <text class="s" x="36" y="300">book online through a</text>
+  <text class="s" x="36" y="316">personal link</text>
+
+  <rect class="acc" x="24" y="344" width="177" height="70" rx="8"/>
+  <text class="t" x="36" y="367">Public entry point</text>
+  <text class="s" x="36" y="386">booking page only,</text>
+  <text class="s" x="36" y="402">path allowlist</text>
+
+  <rect class="box" x="24" y="440" width="177" height="106" rx="8"/>
+  <text class="t" x="36" y="463">Development</text>
+  <text class="s" x="36" y="482">Mac, private Git repo,</text>
+  <text class="s" x="36" y="498">update script: backup,</text>
+  <text class="s" x="36" y="514">build, migration, restart,</text>
+  <text class="s" x="36" y="530">status check</text>
+
+  <!-- Server -->
+  <rect class="box" x="244" y="54" width="494" height="84" rx="8"/>
+  <text class="t" x="258" y="77">Web app (React, Vite, Tailwind)</text>
+  <text class="s" x="258" y="96">33 pages: calendar, patient records, session notes, billing, reports, tasks,</text>
+  <text class="s" x="258" y="112">front desk, rooms. The booking page has its own entry point</text>
+  <text class="s" x="258" y="128">and bundle, with none of the staff app's code.</text>
+
+  <rect class="box" x="244" y="158" width="280" height="150" rx="8"/>
+  <text class="t" x="258" y="181">API (Node.js, Express)</text>
+  <text class="s" x="258" y="200">about 265 endpoints</text>
+  <text class="s" x="258" y="216">JWT, bcrypt, lockout on failed logins</text>
+  <text class="s" x="258" y="232">roles plus per-case access</text>
+  <text class="s" x="258" y="248">audit log and login log</text>
+  <text class="s" x="258" y="264">tariff rules 581/582, invoice PDF</text>
+  <text class="s" x="258" y="280">FODA-XML 5.0, ICS import</text>
+
+  <rect class="box" x="538" y="158" width="200" height="150" rx="8"/>
+  <text class="t" x="550" y="181">Scheduled jobs</text>
+  <text class="s" x="550" y="200">nightly: encrypted</text>
+  <text class="s" x="550" y="216">backup of database</text>
+  <text class="s" x="550" y="232">and uploads</text>
+  <text class="s" x="550" y="252">tasks for missing items</text>
+  <text class="s" x="550" y="268">and reminders,</text>
+  <text class="s" x="550" y="284">switchable</text>
+
+  <rect class="box" x="244" y="328" width="280" height="86" rx="8"/>
+  <text class="t" x="258" y="351">Database (SQLite)</text>
+  <text class="s" x="258" y="370">about 94 tables, migrations</text>
+  <text class="s" x="258" y="386">credentials encrypted with</text>
+  <text class="s" x="258" y="402">AES-256-GCM</text>
+
+  <rect class="box" x="538" y="328" width="200" height="86" rx="8"/>
+  <text class="t" x="550" y="351">Staging</text>
+  <text class="s" x="550" y="370">own instance, database</text>
+  <text class="s" x="550" y="386">and branch for testing</text>
+  <text class="s" x="550" y="402">before production</text>
+
+  <rect class="acc" x="244" y="434" width="494" height="112" rx="8"/>
+  <text class="t" x="258" y="457">Local AI (internal only)</text>
+  <text class="s" x="258" y="477">Ollama with 30B-parameter-class models, 128 GB unified memory</text>
+  <text class="s" x="258" y="494">Report drafts from the record, checked for numbers, dates and ICD codes;</text>
+  <text class="s" x="258" y="510">sign-off by the head of practice only</text>
+  <text class="s" x="258" y="530">Record search (RAG) with FastAPI and Qdrant, internal AI chat for the practice</text>
+
+  <!-- Daten -->
+  <rect class="box" x="781" y="54" width="195" height="104" rx="8"/>
+  <text class="t" x="793" y="77">NAS 1 (Synology)</text>
+  <text class="s" x="793" y="96">practice files, scans, lists</text>
+  <text class="s" x="793" y="112">Synology Drive as team cloud</text>
+  <text class="s" x="793" y="128">role-based shares</text>
+  <text class="s" x="793" y="144">remote access via VPN only</text>
+
+  <rect class="box" x="781" y="196" width="195" height="92" rx="8"/>
+  <text class="t" x="793" y="219">NAS 2 (Backup)</text>
+  <text class="s" x="793" y="238">target for Hyper Backup</text>
+  <text class="s" x="793" y="254">and the nightly</text>
+  <text class="s" x="793" y="270">server backup</text>
+
+  <rect class="box" x="781" y="310" width="195" height="236" rx="8"/>
+  <text class="t" x="793" y="333">Integrations</text>
+  <text class="s" x="793" y="354">billing export in</text>
+  <text class="s" x="793" y="370">FODA-XML 5.0</text>
+  <text class="s" x="793" y="392">calendar import (ICS),</text>
+  <text class="s" x="793" y="408">10,103 appointments migrated</text>
+  <text class="s" x="793" y="430">import from the previous</text>
+  <text class="s" x="793" y="446">practice system (XML)</text>
+  <text class="s" x="793" y="468">e-mail with</text>
+  <text class="s" x="793" y="484">67 templates</text>
+
+  <!-- Verbindungen -->
+  <path class="l" d="M112,138 L112,158" marker-end="url(#a)"/>
+  <path class="l" d="M112,324 L112,344" marker-end="url(#a)"/>
+  <path class="l" d="M201,193 L220,193 L220,92 L244,92" marker-end="url(#a)"/>
+  <path class="l" d="M201,379 L228,379 L228,118 L244,118" marker-end="url(#a)"/>
+  <path class="l" d="M384,138 L384,158" marker-end="url(#a)"/>
+  <path class="l" d="M384,308 L384,328" marker-end="url(#a)"/>
+  <path class="l" d="M524,233 L538,233" marker-end="url(#a)"/>
+  <path class="l" d="M524,290 L531,290 L531,434" marker-end="url(#a)"/>
+  <path class="d" d="M878,158 L878,196" marker-end="url(#a)"/>
+  <text class="lab" x="886" y="181">Hyper Backup</text>
+  <path class="d" d="M738,214 L760,214 L760,242 L781,242" marker-end="url(#a)"/>
+</svg>
